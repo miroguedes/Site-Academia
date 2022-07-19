@@ -94,13 +94,87 @@
 
         } 
 
+        /* centro conteudo principal */
+
+        main {
+            height: 93vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tetos principais */
+
+        .primary-text {
+            width: 850px;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            
+        }
+
+
+        .second-text {
+            margin-bottom: 7rem;
+            font-size: 2rem;
+            color: rgb(165, 165, 165);
+            text-transform: uppercase;
+        }
+
+        /*botões*/
+
+        .bts {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btns button {
+            width: 250px;
+            height: 60px;
+            cursor: pointer;
+            border: 1px solid white;
+            color: white;
+            text-transform: uppercase;
+            background-color: transparent;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+            border-radius: 20px;
+            position: relative;
+            transition: 1.5s;
+        }
+
+        .btns button:before {
+            content: '';
+            border-radius: 20px;
+            left: 0px;
+            bottom: 0px;
+            position: absolute;
+            width: 0px;
+            height: 60px;
+            background-color: rgb(61, 61, 61);
+            z-index: -1;
+            transition: 1s;
+        }
+
+        .btns button:hover:before {
+            width: 100%;
+        }
+
     </style>
     
 </head>
 <body>
     <header>
         <div class="menu-content">
-            <h1 class="logo">AcademiaInfinity</h1>
+            <h1 class="logo">Academia Infinity</h1>
             <nav class="header-menu">
                 <ul class="list-itens">
                     <li><a href="#"></a>home</li>
@@ -115,14 +189,14 @@
                </div>
     </header>   
         <main>
-            <div class="main-content"></div>
+            <div class="main-content">
             <h1 class="primary-text">Malhar não fica mais fácil, você que fica melhor</h1>
             <h2 class="second-text">Se inscreva agora e mude a sua vida</h2>
             <div class="btns">
                 <button class="btn-exp">Agendar aula experimental</button>
                 <button class="btn-personal">Contactar Personal Trainer</button>
 
-            </div>
+            </div></div>
         </main>
 
     
